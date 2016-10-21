@@ -14,3 +14,6 @@ C:\Users\Александр\Desktop\Task_1_1\Task_1_1_WPF\obj\Debug\Task_1_1_WPF
 C:\Users\Александр\Desktop\Task_1_1\Task_1_1_WPF\obj\Debug\Task_1_1_WPF.csproj.GenerateResource.Cache
 C:\Users\Александр\Desktop\Task_1_1\Task_1_1_WPF\obj\Debug\Task_1_1_WPF.exe
 C:\Users\Александр\Desktop\Task_1_1\Task_1_1_WPF\obj\Debug\Task_1_1_WPF.pdb
+G:\HomeWork\Task_1\Task_1_1_WPF\bin\Debug\Task_1_1_WPF.exe.config
+G:\HomeWork\Task_1\Task_1_1_WPF\obj\Debug\Task_1_1_WPF.exe
+G:\HomeWork\Task_1\Task_1_1_WPF\obj\Debug\Task_1_1_WPF.pdb

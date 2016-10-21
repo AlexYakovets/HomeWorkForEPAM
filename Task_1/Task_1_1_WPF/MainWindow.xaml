@@ -5,16 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Task_1_1_WPF"
         mc:Ignorable="d"
-        Title="Task_1_1_WPF" Height="300" Width="525">
-    <Grid RenderTransformOrigin="0.441,0.539">
+        Title="Task_1_1_WPF" Height="300" Width="538.846">
+    <Grid RenderTransformOrigin="0.441,0.539" Margin="10,0,18,0">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="353*"/>
             <ColumnDefinition Width="164*"/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="ConvertString" Content="Convert String" HorizontalAlignment="Left" Height="30" Margin="54,10,0,0" VerticalAlignment="Top" Width="100" Grid.Column="1" Click="ConvertString_Click"/>
+        <Button x:Name="ConvertString" Content="Convert String" HorizontalAlignment="Left" Height="30" Margin="10,10,0,0" VerticalAlignment="Top" Width="100" Grid.Column="1" Click="ConvertString_Click"/>
         <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="30" Margin="0,10,0,0" TextWrapping="Wrap" Text="12,3456.78,9000" VerticalAlignment="Top" Width="333" FontSize="16" FontFamily="Source Sans Pro Semibold"/>
-        <Button x:Name="ConvertFromFile" Content="Convert From File" HorizontalAlignment="Left" Margin="54,45,0,0" VerticalAlignment="Top" Width="100" Height="30" Click="ConvertFromFile_Click" Grid.Column="1"/>
-        <TextBox x:Name="ChoseFile" HorizontalAlignment="Left" Height="30" Margin="10,45,0,0" TextWrapping="Wrap" Text="Chose file, which need convert&#xD;&#xA;" VerticalAlignment="Top" Width="303" IsEnabled="False"/>
+        <Button x:Name="ConvertFromFile" Content="Convert From File" HorizontalAlignment="Left" Margin="10,45,0,0" VerticalAlignment="Top" Width="100" Height="30" Click="ConvertFromFile_Click" Grid.Column="1" RenderTransformOrigin="-0.448,0.318"/>
+        <TextBox x:Name="ChoseFile" HorizontalAlignment="Left" Height="30" Margin="0,45,0,0" TextWrapping="Wrap" Text="Chose file, which need convert&#xD;&#xA;" VerticalAlignment="Top" Width="313" IsEnabled="False"/>
         <Button x:Name="ChangeDirectory" Content="..." HorizontalAlignment="Left" Margin="313,45,0,0" VerticalAlignment="Top" Width="20" Height="30" RenderTransformOrigin="0.5,0.5"  Click="ChangeDirectory_Click">
             <Button.RenderTransform>
                 <TransformGroup>
@@ -25,7 +25,7 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <RichTextBox VerticalScrollBarVisibility="Visible" x:Name="richTextBox" HorizontalAlignment="Left" Height="143" VerticalAlignment="Top" Width="294" Margin="39,90,0,0">
+        <RichTextBox VerticalScrollBarVisibility="Visible" x:Name="richTextBox" HorizontalAlignment="Left" Height="153" VerticalAlignment="Top" Width="333" Margin="0,80,0,0">
             <FlowDocument>
                 <Paragraph>
                     <Run Text=""/>

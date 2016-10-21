@@ -20,3 +20,6 @@ C:\Users\Александр\Desktop\Task_1_1\Task_1_1\bin\Debug\Task_1_1.pdb
 C:\Users\Александр\Desktop\Task_1_1\Task_1_1\bin\Debug\StringRegex.dll
 C:\Users\Александр\Desktop\Task_1_1\Task_1_1\bin\Debug\StringRegex.pdb
 C:\Users\Александр\Desktop\Task_1_1\Task_1_1\obj\Debug\Task_1_1.csprojResolveAssemblyReference.cache
+G:\HomeWork\Task_1\Task_1_1\bin\Debug\Task_1_1.exe.config
+G:\HomeWork\Task_1\Task_1_1\obj\Debug\Task_1_1.exe
+G:\HomeWork\Task_1\Task_1_1\obj\Debug\Task_1_1.pdb
