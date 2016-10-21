@@ -1,0 +1,17 @@
+D:\Git\Task_1_1\UnitTestStringRegex\bin\Debug\UnitTestStringRegex.dll
+D:\Git\Task_1_1\UnitTestStringRegex\bin\Debug\UnitTestStringRegex.pdb
+D:\Git\Task_1_1\UnitTestStringRegex\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\Git\Task_1_1\UnitTestStringRegex\bin\Debug\StringRegex.dll
+D:\Git\Task_1_1\UnitTestStringRegex\bin\Debug\StringRegex.pdb
+D:\Git\Task_1_1\UnitTestStringRegex\bin\Debug\ru\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+D:\Git\Task_1_1\UnitTestStringRegex\obj\Debug\UnitTests.csprojResolveAssemblyReference.cache
+D:\Git\Task_1_1\UnitTestStringRegex\obj\Debug\UnitTestStringRegex.dll
+D:\Git\Task_1_1\UnitTestStringRegex\obj\Debug\UnitTestStringRegex.pdb
+C:\Users\Александр\Desktop\Task_1_1\UnitTestStringRegex\bin\Debug\UnitTestStringRegex.dll
+C:\Users\Александр\Desktop\Task_1_1\UnitTestStringRegex\bin\Debug\UnitTestStringRegex.pdb
+C:\Users\Александр\Desktop\Task_1_1\UnitTestStringRegex\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Александр\Desktop\Task_1_1\UnitTestStringRegex\bin\Debug\StringRegex.dll
+C:\Users\Александр\Desktop\Task_1_1\UnitTestStringRegex\bin\Debug\StringRegex.pdb
+C:\Users\Александр\Desktop\Task_1_1\UnitTestStringRegex\obj\Debug\UnitTests.csprojResolveAssemblyReference.cache
+C:\Users\Александр\Desktop\Task_1_1\UnitTestStringRegex\obj\Debug\UnitTestStringRegex.dll
+C:\Users\Александр\Desktop\Task_1_1\UnitTestStringRegex\obj\Debug\UnitTestStringRegex.pdb

@@ -1,0 +1,16 @@
+C:\Users\Александр\Desktop\Task_1_1\Task_1_1_WPF\obj\Debug\Task_1_1_WPF.csprojResolveAssemblyReference.cache
+C:\Users\Александр\Desktop\Task_1_1\Task_1_1_WPF\obj\Debug\MainWindow.g.cs
+C:\Users\Александр\Desktop\Task_1_1\Task_1_1_WPF\obj\Debug\App.g.cs
+C:\Users\Александр\Desktop\Task_1_1\Task_1_1_WPF\obj\Debug\Task_1_1_WPF_MarkupCompile.cache
+C:\Users\Александр\Desktop\Task_1_1\Task_1_1_WPF\obj\Debug\Task_1_1_WPF_MarkupCompile.lref
+C:\Users\Александр\Desktop\Task_1_1\Task_1_1_WPF\bin\Debug\Task_1_1_WPF.exe.config
+C:\Users\Александр\Desktop\Task_1_1\Task_1_1_WPF\bin\Debug\Task_1_1_WPF.exe
+C:\Users\Александр\Desktop\Task_1_1\Task_1_1_WPF\bin\Debug\Task_1_1_WPF.pdb
+C:\Users\Александр\Desktop\Task_1_1\Task_1_1_WPF\bin\Debug\StringRegex.dll
+C:\Users\Александр\Desktop\Task_1_1\Task_1_1_WPF\bin\Debug\StringRegex.pdb
+C:\Users\Александр\Desktop\Task_1_1\Task_1_1_WPF\obj\Debug\MainWindow.baml
+C:\Users\Александр\Desktop\Task_1_1\Task_1_1_WPF\obj\Debug\Task_1_1_WPF.g.resources
+C:\Users\Александр\Desktop\Task_1_1\Task_1_1_WPF\obj\Debug\Task_1_1_WPF.Properties.Resources.resources
+C:\Users\Александр\Desktop\Task_1_1\Task_1_1_WPF\obj\Debug\Task_1_1_WPF.csproj.GenerateResource.Cache
+C:\Users\Александр\Desktop\Task_1_1\Task_1_1_WPF\obj\Debug\Task_1_1_WPF.exe
+C:\Users\Александр\Desktop\Task_1_1\Task_1_1_WPF\obj\Debug\Task_1_1_WPF.pdb

@@ -1,0 +1,10 @@
+D:\Git\Task_1_1\StringRegex\bin\Debug\StringRegex.dll
+D:\Git\Task_1_1\StringRegex\bin\Debug\StringRegex.pdb
+D:\Git\Task_1_1\StringRegex\obj\Debug\StringRegex.dll
+D:\Git\Task_1_1\StringRegex\obj\Debug\StringRegex.pdb
+D:\Git\Task_1_1\StringRegex\obj\Debug\StringRegex.csprojResolveAssemblyReference.cache
+C:\Users\Александр\Desktop\Task_1_1\StringRegex\bin\Debug\StringRegex.dll
+C:\Users\Александр\Desktop\Task_1_1\StringRegex\bin\Debug\StringRegex.pdb
+C:\Users\Александр\Desktop\Task_1_1\StringRegex\obj\Debug\StringRegex.csprojResolveAssemblyReference.cache
+C:\Users\Александр\Desktop\Task_1_1\StringRegex\obj\Debug\StringRegex.dll
+C:\Users\Александр\Desktop\Task_1_1\StringRegex\obj\Debug\StringRegex.pdb
