@@ -31,9 +31,9 @@ namespace Task_2
             double n, A, eps,result;
             try
             {
-                if (Double.TryParse(inputN.Text, out n) == false)throw new FormatException();
-                if (Double.TryParse(inputA.Text, out A) == false)throw new FormatException();
-                if (Double.TryParse(inputEps.Text, out eps) == false)throw new FormatException();
+                if (Double.TryParse(inputN.Text, out n))throw new FormatException();
+                if (Double.TryParse(inputA.Text, out A))throw new FormatException();
+                if (Double.TryParse(inputEps.Text, out eps))throw new FormatException();
                 result=AlternativeMath.SqrtByNewton(n, A, eps);
                 richTextBox.AppendText("result of MyMath:"+ result + ",result of Math.Pow:"+Math.Pow(A,1/n)+"\n");
             }
@@ -43,6 +43,16 @@ namespace Task_2
             }
 
 
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                label2.Content = textBox.Text + "in binary code : " + AlternativeMath.ToBinaryCode(Convert.ToInt32(textBox.Text));
+            }
+            catch(ArgumentOutOfRangeException) { label2.Content = "entered number shouldn't be less than 0"; }
+            catch(FormatException) { label2.Content = "input data is not numeral"; }
         }
     }
 }
