@@ -8,3 +8,9 @@ C:\Users\Александр\Desktop\Task_1_1\StringRegex\bin\Debug\StringRegex.p
 C:\Users\Александр\Desktop\Task_1_1\StringRegex\obj\Debug\StringRegex.csprojResolveAssemblyReference.cache
 C:\Users\Александр\Desktop\Task_1_1\StringRegex\obj\Debug\StringRegex.dll
 C:\Users\Александр\Desktop\Task_1_1\StringRegex\obj\Debug\StringRegex.pdb
+G:\HomeWork\Task_1\StringRegex\bin\Debug\StringRegex.XML
+G:\HomeWork\Task_1\StringRegex\bin\Debug\StringRegex.dll
+G:\HomeWork\Task_1\StringRegex\bin\Debug\StringRegex.pdb
+G:\HomeWork\Task_1\StringRegex\obj\Debug\StringRegex.csprojResolveAssemblyReference.cache
+G:\HomeWork\Task_1\StringRegex\obj\Debug\StringRegex.dll
+G:\HomeWork\Task_1\StringRegex\obj\Debug\StringRegex.pdb

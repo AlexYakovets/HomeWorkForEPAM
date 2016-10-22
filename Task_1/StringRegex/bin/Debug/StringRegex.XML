@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>StringRegex</name>
+    </assembly>
+    <members>
+        <member name="T:StringRegex.StringRegexConvert">
+            <summary>
+             class StringRegexConvert
+             main class of the dll "StringRegex"
+             working with xml-comments
+            </summary>
+        </member>
+        <member name="M:StringRegex.StringRegexConvert.IsMatchPattern(System.String@,System.String)">
+            <summary>
+            The method "IsMatchPattern" check input string for pattern matching
+            </summary>
+            <param name="_str">reference to input string</param>
+            <param name="_verifypattern">pattern,which string should correspond</param>
+        </member>
+        <member name="M:StringRegex.StringRegexConvert.SelectString(System.String@,System.String)">
+            <summary>
+            The method "SelectString" check input string for pattern matching
+            </summary>
+            <param name="_str">reference to variable string</param>
+            <param name="_pattern">pattern,thanks to, line should be changed</param>
+        </member>
+        <member name="M:StringRegex.StringRegexConvert.DoReplace(System.String@)">
+            <summary>
+            The method "DoReplace" making changes in the line
+            </summary>
+            <param name="_str">reference to variable string</param>
+            <returns>edited string</returns>
+        </member>
+        <member name="M:StringRegex.StringRegexConvert.DoReplaceFromFile(System.String)">
+            <summary>
+            The method "DoReplace" making changes in all lines of the file 
+            </summary>
+            <param name="_fileName">path to the file</param>
+            <returns>List of strings,which changed if it matching pattern</returns>
+        </member>
+    </members>
+</doc>
