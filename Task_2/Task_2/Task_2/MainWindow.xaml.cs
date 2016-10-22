@@ -31,11 +31,11 @@ namespace Task_2
             double n, A, eps,result;
             try
             {
-                if (Double.TryParse(inputN.Text, out n) == false) new FormatException();
-                if (Double.TryParse(inputA.Text, out A) == false) new FormatException();
-                if (Double.TryParse(inputEps.Text, out eps) == false) new FormatException();
+                if (Double.TryParse(inputN.Text, out n) == false)throw new FormatException();
+                if (Double.TryParse(inputA.Text, out A) == false)throw new FormatException();
+                if (Double.TryParse(inputEps.Text, out eps) == false)throw new FormatException();
                 result=AlternativeMath.SqrtByNewton(n, A, eps);
-                richTextBox.AppendText(result + "\n");
+                richTextBox.AppendText("result of MyMath:"+ result + ",result of Math.Pow:"+Math.Pow(A,1/n)+"\n");
             }
             catch (FormatException)
             {
