@@ -20,6 +20,25 @@ namespace MyMath
             }
             return x1;
         }
-
+        public static string ToBinaryCode(int numeric)
+        {
+            if(numeric<0)throw new ArgumentOutOfRangeException();
+            int temp1 = 0;
+            List<int> s = new List<int>();
+            while (numeric > 0)
+            {
+                temp1 = numeric % 2;
+                numeric = numeric / 2;
+                s.Add(temp1);
+                //switch elements in list sides
+            }
+            string str = "";
+                for (int i = s.Count - 1; i >= 0; i--)
+                {
+                str += Convert.ToString(s[i]);
+                }
+                return Convert.ToString(str);
+            }
+        }
     }
-}
+
