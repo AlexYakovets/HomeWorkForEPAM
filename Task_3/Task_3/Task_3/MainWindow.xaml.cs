@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using GCDLibrary;
+using System.Diagnostics;
 
 namespace Task_3
 {
@@ -28,7 +29,25 @@ namespace Task_3
 
         private void FindGDC_Click(object sender, RoutedEventArgs e)
         {
-            richTextBox.AppendText("Gdc of the "+number1.Text+" and "+number2.Text+"is"+GCDAlgoritms.GCDByEuclide(Int32.Parse(number1.Text), Int32.Parse(number2.Text)));
+
+            string elapsedTime;
+            Stopwatch stopWatch = new Stopwatch();
+            stopWatch.Start();
+            try
+            {
+                richTextBox.AppendText("Gdc of the " + number1.Text + " and " + number2.Text + " is " +
+                                       GCDAlgoritms.GCDByEuclide(Int32.Parse(number1.Text), Int32.Parse(number2.Text),
+                                           out elapsedTime) + "elapsed time:" + elapsedTime + "\n");
+
+            }
+            catch (OverflowException)
+            {
+                richTextBox.AppendText("input data is not correct\n");
+            }
+            stopWatch.Stop();
+           long timeElapsed=stopWatch.ElapsedMilliseconds;
+           richTextBox.AppendText(Convert.ToString(timeElapsed));
+
         }
     }
 }
