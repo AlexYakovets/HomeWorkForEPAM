@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using GCDLibrary;
 
 namespace Task_3
 {
@@ -23,6 +24,11 @@ namespace Task_3
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void FindGDC_Click(object sender, RoutedEventArgs e)
+        {
+            richTextBox.AppendText("Gdc of the "+number1.Text+" and "+number2.Text+"is"+GCDAlgoritms.GCDByEuclide(Int32.Parse(number1.Text), Int32.Parse(number2.Text)));
         }
     }
 }

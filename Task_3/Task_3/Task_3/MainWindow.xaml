@@ -7,6 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <TextBox x:Name="number1" HorizontalAlignment="Left" Height="17" Margin="118,49,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="61"/>
+        <TextBox x:Name="number2" HorizontalAlignment="Left" Height="18" Margin="118,91,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="61"/>
+        <Label x:Name="label" Content="Input numbers for finding GDC by Euclide" HorizontalAlignment="Left" Height="34" Margin="10,10,0,0" VerticalAlignment="Top" Width="367"/>
+        <Label x:Name="label1" Content="number1:" HorizontalAlignment="Left" Height="26" Margin="32,44,0,0" VerticalAlignment="Top" Width="69" RenderTransformOrigin="0.632,0.094"/>
+        <Label x:Name="label1_Copy" Content="number2:" HorizontalAlignment="Left" Height="26" Margin="32,87,0,0" VerticalAlignment="Top" Width="69" RenderTransformOrigin="0.632,0.094"/>
+        <RichTextBox x:Name="richTextBox" HorizontalAlignment="Left" Height="117" Margin="201,44,0,0" VerticalAlignment="Top" Width="291">
+        </RichTextBox>
+        <Button x:Name="FindGDC" Content="Find GDC" HorizontalAlignment="Left" Height="22" Margin="32,139,0,0" VerticalAlignment="Top" Width="147" Click="FindGDC_Click"/>
+
     </Grid>
 </Window>
