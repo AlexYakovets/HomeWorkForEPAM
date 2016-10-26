@@ -15,6 +15,7 @@
         <RichTextBox x:Name="richTextBox" HorizontalAlignment="Left" Height="117" Margin="201,44,0,0" VerticalAlignment="Top" Width="291">
         </RichTextBox>
         <Button x:Name="FindGDC" Content="Find GDC" HorizontalAlignment="Left" Height="22" Margin="32,139,0,0" VerticalAlignment="Top" Width="147" Click="FindGDC_Click"/>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="-65,161,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

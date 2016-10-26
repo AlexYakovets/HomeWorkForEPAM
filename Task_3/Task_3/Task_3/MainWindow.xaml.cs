@@ -34,7 +34,7 @@ namespace Task_3
             {
                 richTextBox.AppendText("GCD by Euclide of the " + number1.Text + " and " + number2.Text + " is " +
                                        GCDAlgoritms.GCDByEuclide(Int32.Parse(number1.Text), Int32.Parse(number2.Text),
-                                           out elapsedTime) + "elapsed time: " + Convert.ToString(TimeSpan.FromTicks(elapsedTime).TotalMilliseconds) + "\n");
+                                           out elapsedTime) + "elapsed time: " + TimeSpan.FromTicks(elapsedTime).TotalMilliseconds.ToString() + "\n");
                 richTextBox.AppendText("GCD by Stein of the " + number1.Text + " and " + number2.Text + " is " +
                                        GCDAlgoritms.GCDByStein(Int32.Parse(number1.Text), Int32.Parse(number2.Text),
                                            out elapsedTime) + "elapsed time: " + TimeSpan.FromTicks(elapsedTime).TotalMilliseconds.ToString() + "\n");
