@@ -12,9 +12,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Triangle;
-using Triangle = Triangle.Triangle;
-
 namespace Task_4
 {
     /// <summary>
@@ -30,19 +27,19 @@ namespace Task_4
         private void button_Click(object sender, RoutedEventArgs e)
         {
             
-            Side a=new Side(new Triangle.Point(1,1), new Triangle.Point(1, 2));
-            Side b = new Side(new Triangle.Point(1, 5), new Triangle.Point(1, 6));
-            Side c = new Side(new Triangle.Point(1, 6), new Triangle.Point(1, 8));
-            try
-            {
-                Triangle ;
-                label.Content += Convert.ToString(triangle.Square());
-                label.Content += triangle.Square().ToString();
-            }
-            catch (InvalidTriangleException)
-            {
-                label.Content = "exception";
-            }
+            //Side a=new Side(new Triangle.Point(1,1), new Triangle.Point(1, 2));
+            //Side b = new Side(new Triangle.Point(1, 5), new Triangle.Point(1, 6));
+            //Side c = new Side(new Triangle.Point(1, 6), new Triangle.Point(1, 8));
+            //try
+            //{
+            //    Triangle ;
+            //    label.Content += Convert.ToString(triangle.Square());
+            //    label.Content += triangle.Square().ToString();
+            //}
+            //catch (InvalidTriangleException)
+            //{
+            //    label.Content = "exception";
+            //}
 
         }
     }

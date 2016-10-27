@@ -19,5 +19,10 @@ namespace Figures
             aPoint = a;
             bPoint = b;
         }
+
+       public double Length()
+       {
+           return Math.Sqrt(Math.Abs(aPoint.X - bPoint.X) + Math.Abs(aPoint.Y - bPoint.Y));
+       }
     }
 }

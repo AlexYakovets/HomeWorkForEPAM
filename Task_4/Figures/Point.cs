@@ -7,11 +7,17 @@ using System.Xml.Serialization;
 
 namespace Figures
 {
-    class Point
+  public class Point
     {
         private int x;
         private int y;
         public int X { get; }
         public int Y { get; }
+
+        public Point(int A, int B )
+        {
+            this.X = A;
+            this.Y = B;
+        }
     }
 }
