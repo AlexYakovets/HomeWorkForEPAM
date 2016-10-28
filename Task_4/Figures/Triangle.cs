@@ -4,8 +4,8 @@ using System.Dynamic;
 using System.Linq;
 using System.Runtime.Remoting.Messaging;
 using System.Text;
-using System.Threading.Tasks;
-
+using System.Threading.Tasks; 
+using System.Windows.Shapes;
 namespace Figures
 {
     
@@ -16,7 +16,7 @@ namespace Figures
         {
             return 3;
         }
-        private Side[] sides = new Side[3];
+        private Side[] sides = new Side[2];
 
         public Side sideA {
             get { return sides[0]; } 
@@ -44,6 +44,17 @@ namespace Figures
             return (Math.Sqrt(semiPerimetr*(semiPerimetr-sideA.Length())*(semiPerimetr - sideB.Length()) *(semiPerimetr - sideC.Length())));
         }
 
+        private List<Line> TriangleToLines(Triangle triangle)
+        {
+
+            foreach (var side in triangle.s)
+            {
+
+            }
+            List<Line> listOfLines = new List<Line>();
+          
+            return listOfLines;
+        }
     }
 
    public class CreateTriangle : Creator

@@ -7,7 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <Label x:Name="label" Content="Label" HorizontalAlignment="Left" Height="36" Margin="69,21,0,0" VerticalAlignment="Top" Width="110"/>
-        <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Height="31" Margin="69,88,0,0" VerticalAlignment="Top" Width="79" Click="button_Click"/>
+        <Label x:Name="label" Content="" HorizontalAlignment="Left" Height="36" Margin="69,21,0,0" VerticalAlignment="Top" Width="110"/>
+        <Button x:Name="button" Content="Create&#xD;&#xA;triangle" HorizontalAlignment="Left" Height="42" Margin="288,21,0,0" VerticalAlignment="Top" Width="119" Click="button_Click" RenderTransformOrigin="3.353,-1.288"/>
+        <Button x:Name="button1" Content="Show triangle" HorizontalAlignment="Left" Margin="288,79,0,0" VerticalAlignment="Top" Width="119" Height="36" Click="button1_Click"/>
     </Grid>
 </Window>

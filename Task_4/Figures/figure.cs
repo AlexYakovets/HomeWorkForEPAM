@@ -12,7 +12,7 @@ namespace Figures
         public abstract double Square();
     }
 
-    internal abstract class Creator
+    public abstract class Creator
     {
         public abstract Figure Create();
         public abstract Figure Create(Side a,Side b,Side c);
