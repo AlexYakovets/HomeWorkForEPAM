@@ -16,12 +16,24 @@ namespace Figures
         {
             return 3;
         }
+        private Side[] sides = new Side[3];
 
-        public Side sideA { get; set; }
-        public Side sideB { get; set; }
-        public Side sideC { get; set; }
+        public Side sideA {
+            get { return sides[0]; } 
+            set { sides[0] = value; }
+        }
+        public Side sideB
+        {
+            get { return sides[1]; }
+            set { sides[1] = value; }
+        }
+        public Side sideC
+        {
+            get { return sides[2]; }
+            set { sides[2] = value; }
+        }
 
- 
+
         public override double Perimeter()
         {
             return (sideA.Length() + sideB.Length() + sideC.Length());
@@ -34,7 +46,7 @@ namespace Figures
 
     }
 
-    internal class CreateTriangle : Creator
+   public class CreateTriangle : Creator
     {
         public override Figure Create()
         {
