@@ -48,17 +48,17 @@ namespace Figures
         public List<Line> TriangleToLines()
         {
             List<Line> listOfLines = new List<Line>();
-            Line bufline=new Line();
+            
             foreach (var side in this.sides)
             {
-                bufline.X1 = side.aPoint.X;
-                bufline.X2 = side.bPoint.X;
-                bufline.Y1 = side.aPoint.Y;
-                bufline.Y2 = side.bPoint.Y;
+                Line bufline = new Line();
+                bufline.X1 = side.aPoint.x;
+                bufline.X2 = side.bPoint.x;
+                bufline.Y1 = side.aPoint.y;
+                bufline.Y2 = side.bPoint.y;
                 bufline.Stroke = System.Windows.Media.Brushes.LightSteelBlue;
-                bufline.HorizontalAlignment = HorizontalAlignment.Left;
-                bufline.VerticalAlignment = VerticalAlignment.Center;
-                bufline.StrokeThickness = 2;
+         
+                bufline.StrokeThickness = 1;
                 listOfLines.Add(bufline);
             }
 
