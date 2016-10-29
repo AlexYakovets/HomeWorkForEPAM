@@ -35,14 +35,16 @@ namespace Task_4
 
             // Переходим к компоновке
             Grid triangleGrid= new Grid();
-            List<Line> listOfLines = triangle.TriangleToLines();
-            foreach (Line line in listOfLines)
+            if (triangle.IsExists())
             {
-                triangleGrid.Children.Add(line);
+                List<Line> listOfLines = triangle.TriangleToLines();
+                foreach (Line line in listOfLines)
+                {
+                    triangleGrid.Children.Add(line);
+                }
+                this.AddChild(triangleGrid);
             }
-            this.AddChild(triangleGrid);
-
-
+            else this.Title = "Error!!!Triangle with input parametres is ot exists";
 
         }
 
@@ -62,9 +64,9 @@ namespace Task_4
         private void button_Click(object sender, RoutedEventArgs e)
         {
             
-            Side a=new Side(new Figures.Point(1,1), new Figures.Point(100, 100));
-            Side b = new Side(new Figures.Point(2, 5), new Figures.Point(34, 100));
-            Side c = new Side(new Figures.Point(2, 1), new Figures.Point(145, 125));
+            Side a=new Side(new Figures.Point(1,1), new Figures.Point(20, 100));
+            Side b = new Side(new Figures.Point(20, 100), new Figures.Point(90, 56));
+            Side c = new Side(new Figures.Point(90, 56), new Figures.Point(1, 1));
             CreateTriangle CreatorOfTriangles=new CreateTriangle();
             triangle = (Triangle)CreatorOfTriangles.Create(a, b, c);
 
@@ -75,5 +77,6 @@ namespace Task_4
             ShowTriangleWindow showTr=new ShowTriangleWindow(triangle);
             showTr.Show();
         }
+
     }
 }

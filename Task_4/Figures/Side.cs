@@ -22,7 +22,19 @@ namespace Figures
 
        public double Length()
        {
-           return Math.Sqrt(Math.Abs(aPoint.X - bPoint.X) + Math.Abs(aPoint.Y - bPoint.Y));
+           return Math.Sqrt(Math.Abs(aPoint.x - bPoint.x) + Math.Abs(aPoint.y - bPoint.y));
        }
+    }
+
+    public static class Intersection
+    {
+        public static bool sidesIsIntersect(Side a, Side b)
+        {
+            PointEqualityComparer PointsComparer=new PointEqualityComparer();
+            if (PointsComparer.Equals(a.aPoint, b.aPoint) || PointsComparer.Equals(a.bPoint, b.aPoint) || PointsComparer.Equals(a.aPoint, b.bPoint) ||
+               PointsComparer.Equals(a.bPoint, b.bPoint))
+                return true;
+            else return false;
+        }
     }
 }

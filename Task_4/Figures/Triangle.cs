@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Shapes;
+using  Figures;
 namespace Figures
 {
     
@@ -64,6 +65,16 @@ namespace Figures
 
           
             return listOfLines;
+        }
+
+        public bool IsExists()
+        {
+            if (Intersection.sidesIsIntersect(sideA, sideB) && Intersection.sidesIsIntersect(sideB, sideC) 
+                && Intersection.sidesIsIntersect(sideA, sideC)
+                && (sideA.Length()<sideB.Length()+sideC.Length())&& (sideB.Length() < sideA.Length() + sideC.Length())
+                && (sideC.Length() < sideA.Length() + sideB.Length()))
+                return  true;
+            return false;
         }
     }
 
