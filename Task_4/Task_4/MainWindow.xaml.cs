@@ -16,50 +16,46 @@ using System.Windows.Shapes;
 using Figures;
 namespace Task_4
 {
-    /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
-    /// </summary>
+    // <summary>
+    // Logic for module user window
+    // </summary>
     public class ShowTriangleWindow : Window
     {
-        public ShowTriangleWindow()
+        public ShowTriangleWindow(Triangle triangle)
         {
-           InitializedComponent();
+            InitializedComponent(triangle);
         }
 
-        private void InitializedComponent()
+        private void InitializedComponent(Triangle triangle)
         {
-            
-                // Новая форма
-                this.Width = this.Height = 300;
-                this.Left = this.Top = 100;
-                this.Title = "Triangle";
 
-                // Переходим к компоновке
-                DockPanel panel = new DockPanel();
-                Line myLine = new Line();
-                myLine.Stroke = System.Windows.Media.Brushes.LightSteelBlue;
-                myLine.X1 = 1;
-                myLine.X2 = 50;
-                myLine.Y1 = 1;
-                myLine.Y2 = 50;
-                myLine.HorizontalAlignment = HorizontalAlignment.Left;
-                myLine.VerticalAlignment = VerticalAlignment.Center;
-                myLine.StrokeThickness = 2;
-                IAddChild container = panel;
+            // Новая форма
+            this.Width = this.Height = 300;
+            this.Left = this.Top = 100;
+            this.Title = "Triangle";
+           
+            // Переходим к компоновке
+         
+            IAddChild container = this;
+            List<Line> listOfLines = triangle.TriangleToLines();
+            //foreach (var line in listOfLines)
+            //{
+            //    container.AddChild(line);
+            //}
+            container.AddChild(listOfLines[0]);
+           
 
-                container.AddChild(myLine);
-
-                container = this;
-                container.AddChild(panel);
-          
 
         }
 
-       
+
     }
-
+    // <summary>
+    // Логика взаимодействия для MainWindow.xaml
+    // </summary>
     public partial class MainWindow : Window
     {
+        public Triangle triangle;
         public MainWindow()
         {
             InitializeComponent();
@@ -68,17 +64,17 @@ namespace Task_4
         private void button_Click(object sender, RoutedEventArgs e)
         {
             
-            Side a=new Side(new Figures.Point(1,1), new Figures.Point(1, 2));
-            Side b = new Side(new Figures.Point(1, 5), new Figures.Point(1, 6));
-            Side c = new Side(new Figures.Point(1, 6), new Figures.Point(1, 8));
+            Side a=new Side(new Figures.Point(100,100), new Figures.Point(100000, 100000));
+            Side b = new Side(new Figures.Point(1, 5), new Figures.Point(100000, 100000));
+            Side c = new Side(new Figures.Point(1, 6), new Figures.Point(100000, 100000));
             CreateTriangle CreatorOfTriangles=new CreateTriangle();
-            Figures.Figure triangle = CreatorOfTriangles.Create(a, b, c);
+            triangle = (Triangle)CreatorOfTriangles.Create(a, b, c);
 
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            ShowTriangleWindow showTr=new ShowTriangleWindow();
+            ShowTriangleWindow showTr=new ShowTriangleWindow(triangle);
             showTr.Show();
         }
     }

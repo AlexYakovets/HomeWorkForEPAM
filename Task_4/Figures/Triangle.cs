@@ -4,7 +4,8 @@ using System.Dynamic;
 using System.Linq;
 using System.Runtime.Remoting.Messaging;
 using System.Text;
-using System.Threading.Tasks; 
+using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Shapes;
 namespace Figures
 {
@@ -16,7 +17,7 @@ namespace Figures
         {
             return 3;
         }
-        private Side[] sides = new Side[2];
+        private Side[] sides = new Side[3];
 
         public Side sideA {
             get { return sides[0]; } 
@@ -44,14 +45,23 @@ namespace Figures
             return (Math.Sqrt(semiPerimetr*(semiPerimetr-sideA.Length())*(semiPerimetr - sideB.Length()) *(semiPerimetr - sideC.Length())));
         }
 
-        private List<Line> TriangleToLines(Triangle triangle)
+        public List<Line> TriangleToLines()
         {
-
-            foreach (var side in triangle.s)
-            {
-
-            }
             List<Line> listOfLines = new List<Line>();
+            Line bufline=new Line();
+            foreach (var side in this.sides)
+            {
+                bufline.X1 = side.aPoint.X;
+                bufline.X2 = side.bPoint.X;
+                bufline.Y1 = side.aPoint.Y;
+                bufline.Y2 = side.bPoint.Y;
+                bufline.Stroke = System.Windows.Media.Brushes.LightSteelBlue;
+                bufline.HorizontalAlignment = HorizontalAlignment.Left;
+                bufline.VerticalAlignment = VerticalAlignment.Center;
+                bufline.StrokeThickness = 2;
+                listOfLines.Add(bufline);
+            }
+
           
             return listOfLines;
         }
