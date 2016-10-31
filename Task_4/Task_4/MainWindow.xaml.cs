@@ -25,6 +25,7 @@ namespace Task_4
         {
             InitializedComponent(triangle);
         }
+
         private void InitializedComponent(Triangle triangle)
         {
 
@@ -32,19 +33,17 @@ namespace Task_4
             this.Width = this.Height = 300;
             this.Left = this.Top = 100;
             this.Title = "Triangle";
-
+           
             // Переходим к компоновке
-            Grid triangleGrid= new Grid();
-            if (triangle.IsExists())
+            Grid grid=new Grid();
+            List<Line> listOfLines = triangle.TriangleToLines();
+            foreach (Line line in listOfLines)
             {
-                List<Line> listOfLines = triangle.TriangleToLines();
-                foreach (Line line in listOfLines)
-                {
-                    triangleGrid.Children.Add(line);
-                }
-                this.AddChild(triangleGrid);
+                grid.Children.Add(line);
             }
-            else this.Title = "Error!!!Triangle with input parametres is ot exists";
+            this.Content = grid;
+
+
 
         }
 
@@ -63,10 +62,10 @@ namespace Task_4
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            
-            Side a=new Side(new Figures.Point(1,1), new Figures.Point(20, 100));
-            Side b = new Side(new Figures.Point(20, 100), new Figures.Point(90, 56));
-            Side c = new Side(new Figures.Point(90, 56), new Figures.Point(1, 1));
+
+            Side a = new Side(new Figures.Point(10, 10), new Figures.Point(40, 10));
+            Side b = new Side(new Figures.Point(40, 10), new Figures.Point(10, 50));
+            Side c = new Side(new Figures.Point(10, 50), new Figures.Point(10, 10));
             CreateTriangle CreatorOfTriangles=new CreateTriangle();
             triangle = (Triangle)CreatorOfTriangles.Create(a, b, c);
 
@@ -77,6 +76,5 @@ namespace Task_4
             ShowTriangleWindow showTr=new ShowTriangleWindow(triangle);
             showTr.Show();
         }
-
     }
 }

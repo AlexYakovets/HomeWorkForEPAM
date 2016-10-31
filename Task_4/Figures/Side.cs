@@ -22,7 +22,7 @@ namespace Figures
 
        public double Length()
        {
-           return Math.Sqrt(Math.Abs(aPoint.x - bPoint.x) + Math.Abs(aPoint.y - bPoint.y));
+           return Math.Sqrt(Math.Pow(Math.Abs(aPoint.x - bPoint.x),2) + Math.Pow(Math.Abs(aPoint.y - bPoint.y),2));
        }
     }
 

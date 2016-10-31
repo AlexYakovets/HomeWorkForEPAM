@@ -5,28 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Task_4"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        <Button x:Name="button2" Content="Create&#xA;triangle" HorizontalAlignment="Left" Height="42" Margin="10,146,0,0" VerticalAlignment="Top" Width="164" Click="button_Click" RenderTransformOrigin="3.353,-1.288"/>
-        <Button x:Name="button3" Content="Show triangle" HorizontalAlignment="Left" Margin="342,57,0,0" VerticalAlignment="Top" Width="119" Height="36" Click="button1_Click"/>
-        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="19" Margin="59,57,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="47"/>
-        <TextBox x:Name="textBox_Copy5" HorizontalAlignment="Left" Height="19" Margin="127,85,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="47" />
-        <TextBox x:Name="textBox_Copy6" HorizontalAlignment="Left" Height="19" Margin="59,85,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="47" />
-        <TextBox x:Name="textBox_Copy7" HorizontalAlignment="Left" Height="19" Margin="127,57,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="47" />
-        <TextBox x:Name="textBox_Copy8" HorizontalAlignment="Left" Height="19" Margin="127,115,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="47" />
-        <TextBox x:Name="textBox_Copy9" HorizontalAlignment="Left" Height="19" Margin="59,115,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="47" />
-        <Label x:Name="label1" Content="X" HorizontalAlignment="Left" Height="31" Margin="59,21,0,0" VerticalAlignment="Top" Width="47"/>
-        <Label x:Name="label_Copy2" Content="Y" HorizontalAlignment="Left" Height="31" Margin="127,21,0,0" VerticalAlignment="Top" Width="47"/>
-        <Label x:Name="label_Copy3" Content="sideA" HorizontalAlignment="Left" Height="31" Margin="7,53,0,0" VerticalAlignment="Top" Width="47"/>
-        <Label x:Name="label_Copy" Content="sideB" HorizontalAlignment="Left" Height="31" Margin="7,81,0,0" VerticalAlignment="Top" Width="47"/>
-        <Label x:Name="label_Copy1" Content="sideC" HorizontalAlignment="Left" Height="31" Margin="7,110,0,0" VerticalAlignment="Top" Width="47" RenderTransformOrigin="0.438,0.419"/>
-        <TextBox x:Name="textBox1_Copy" HorizontalAlignment="Left" Height="19" Margin="198,57,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="47" />
-        <TextBox x:Name="textBox_Copy" HorizontalAlignment="Left" Height="19" Margin="266,85,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="47" />
-        <TextBox x:Name="textBox_Copy1" HorizontalAlignment="Left" Height="19" Margin="198,85,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="47" />
-        <TextBox x:Name="textBox_Copy2" HorizontalAlignment="Left" Height="19" Margin="266,57,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="47" />
-        <TextBox x:Name="textBox_Copy3" HorizontalAlignment="Left" Height="19" Margin="266,115,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="47" />
-        <TextBox x:Name="textBox_Copy4" HorizontalAlignment="Left" Height="19" Margin="198,115,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="47" />
-        <Label x:Name="label1_Copy" Content="X2" HorizontalAlignment="Left" Height="31" Margin="198,21,0,0" VerticalAlignment="Top" Width="47"/>
-        <Label x:Name="label_Copy4" Content="Y2" HorizontalAlignment="Left" Height="31" Margin="266,21,0,0" VerticalAlignment="Top" Width="47"/>
+        Title="MainWindow" Height="186.505" Width="399.048">
+    <Grid Margin="0,0,2,-5">
+        <Button x:Name="button2" Content="Create&#xA;triangle" HorizontalAlignment="Left" Height="42" Margin="28,57,0,0" VerticalAlignment="Top" Width="164" Click="button_Click" RenderTransformOrigin="3.353,-1.288"/>
+        <Button x:Name="button3" Content="Show triangle" HorizontalAlignment="Left" Margin="209,57,0,0" VerticalAlignment="Top" Width="147" Height="42" Click="button1_Click"/>
     </Grid>
 </Window>

@@ -23,3 +23,6 @@ C:\Users\Александр\Desktop\Task_1_1\Task_1_1\obj\Debug\Task_1_1.csprojR
 G:\HomeWork\Task_1\Task_1_1\bin\Debug\Task_1_1.exe.config
 G:\HomeWork\Task_1\Task_1_1\obj\Debug\Task_1_1.exe
 G:\HomeWork\Task_1\Task_1_1\obj\Debug\Task_1_1.pdb
+C:\Users\Yakovets\Documents\HomeWorkForEPAM\Task_1\Task_1_1\bin\Debug\Task_1_1.exe.config
+C:\Users\Yakovets\Documents\HomeWorkForEPAM\Task_1\Task_1_1\obj\Debug\Task_1_1.exe
+C:\Users\Yakovets\Documents\HomeWorkForEPAM\Task_1\Task_1_1\obj\Debug\Task_1_1.pdb
