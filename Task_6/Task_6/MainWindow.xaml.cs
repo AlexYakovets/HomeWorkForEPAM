@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Classes;
 
 namespace Task_6
 {
@@ -23,6 +24,23 @@ namespace Task_6
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            int n;
+            n = Convert.ToInt32(textBox.Text);
+            ProgramConverter[] array = new ProgramConverter[n];
+            for (int i = 0; i < n/2; i++)
+            {
+                array[i]=new ProgramConverter();
+            }
+            for (int i = n / 2; i < n ; i++)
+            {
+                array[i] = new ProgramHelper(); 
+            }
+            array[1].
+
         }
     }
 }
