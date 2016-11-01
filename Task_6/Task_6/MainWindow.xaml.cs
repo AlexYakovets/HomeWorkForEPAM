@@ -39,7 +39,6 @@ namespace Task_6
             {
                 array[i] = new ProgramHelper(); 
             }
-            array[1].
 
         }
     }

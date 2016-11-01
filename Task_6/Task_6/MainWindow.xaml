@@ -11,7 +11,8 @@
             <ColumnDefinition Width="164*"/>
             <ColumnDefinition Width="353*"/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="button" Grid.ColumnSpan="2" Content="Crete array" HorizontalAlignment="Left" Height="35" Margin="76,34,0,0" VerticalAlignment="Top" Width="111"/>
+        <Button x:Name="button" Content="Crete array" HorizontalAlignment="Left" Height="35" Margin="10,37,0,0" VerticalAlignment="Top" Width="111" Click="button_Click" Grid.Column="1"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="34,46,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>
