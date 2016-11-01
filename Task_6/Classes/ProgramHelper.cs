@@ -7,16 +7,24 @@ using Interfaces;
 
 namespace Classes
 {
-    public class ProgramHelper:Interfaces.IConvertible
+    public class ProgramHelper:ProgramConverter,Interfaces.ICodeChecker
     {
-        public string ConvertToCSharp(string str)
-        {
-            return str;
-        }
+        //commented, because this metods derived from ProgramConverter
+        //public string ConvertToCSharp(string str)
+        //{
+        //    str.Replace("VB", "C#");
+        //    return str;
+        //}
 
-        public string ConvertToVB(string str)
+        //public string ConvertToVB(string str)
+        //{
+        //    str.Replace("C#", "VB");
+        //    return str;
+        //}
+
+        public bool CodeCheckSyntax(string str, string lanquage)
         {
-            return str;
+            return str.Contains(lanquage);
         }
     }
 }
