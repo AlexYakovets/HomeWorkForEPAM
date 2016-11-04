@@ -4,9 +4,12 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Collections;
+using ClassLibrary1.Point;
 
 namespace ClassLibrary1
 {
+
     public class Vector
     {
         private Point.Point pointA;
@@ -23,6 +26,7 @@ namespace ClassLibrary1
             set { this.pointB = value; }
         }
 
+
         public Vector(Point.Point p1, Point.Point p2)
         {
             this.pointA = p1;
@@ -37,14 +41,15 @@ namespace ClassLibrary1
 
         public static bool TryFindIntersect(Vector v1, Vector v2, ref Point.Point pointOfIntersect)
         {
-            if ((v1.pointA == v2.pointA) || (v1.pointA == v2.pointB))
+            PointEqualityComparer comparer=new PointEqualityComparer();
+            if (comparer.Equals(v1.pointA,v2.pointA) || comparer.Equals(v1.pointA,v2.pointB))
             {
-                pointOfIntersect = pointA;
+                pointOfIntersect = v1.pointA;
                 return true;
             }
-            if ((v1.pointB == v2.pointA) || (v1.pointB == v2.pointB))
+            else if (comparer.Equals(v1.pointB,v2.pointA) || comparer.Equals(v1.pointB,v2.pointB))
             {
-                pointOfIntersect = pointB;
+                pointOfIntersect = v1.pointB;
                 return true;
             }
             else return false;
@@ -107,6 +112,58 @@ namespace ClassLibrary1
             }
             else throw new Exception("Vectors isn't intersect");
         }
+        public string ToString()
+        {
+            return "point a: x=" + this.pointA.x.ToString() + " y=" + this.pointA.y.ToString() +
+                   "point b: x=" + this.pointB.x.ToString() + " y=" + this.pointB.y.ToString();
+        }
+
+    }
+
+    public class Vectors
+    {
+        private Vector[] vectors;
+
+        public Vectors()
+        {
+            vectors=new Vector[]{new Vector(new Point.Point(1,1),new Point.Point(4,5) ),
+                                new Vector(new Point.Point(4,5),new Point.Point(5,6) ),
+                                new Vector(new Point.Point(9,10),new Point.Point(5,6))};
+
+        }
+        public int Length
+        {
+            get { return vectors.Length; }
+        }
+        public Vector this[int index]
+        {
+            get
+            {
+                return vectors[index];
+            }
+            set
+            {
+                
+                vectors[index] = value;
+            }
+        }
+
+        public IEnumerable GetVectors(int max)
+        {
+            for (int i = 0; i < max; i++)
+            {
+                if (i == vectors.Length)
+                {
+                    yield break;
+                }
+                else
+                {
+                    yield return vectors[i];
+                }
+            }
+        }
+
+
 
     }
 }

@@ -17,10 +17,10 @@ namespace ClassLibrary1.Point
         {
         }
 
-        public Point(int a, int b)
+        public Point(int x, int y)
         {
-            this.x = a;
-            this.y = b;
+            this.x = x;
+            this.y = y;
         }
 
 

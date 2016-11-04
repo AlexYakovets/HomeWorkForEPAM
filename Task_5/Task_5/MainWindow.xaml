@@ -7,6 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="151*"/>
+            <ColumnDefinition Width="366*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="button" Content="Create vectors" HorizontalAlignment="Left" Height="27" Margin="29,22,0,0" VerticalAlignment="Top" Width="93" Click="button_Click"/>
+        <RichTextBox x:Name="richTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="299" Margin="10,10,0,0" VerticalAlignment="Top" Width="331">
+            <FlowDocument/>
+        </RichTextBox>
+
     </Grid>
 </Window>
