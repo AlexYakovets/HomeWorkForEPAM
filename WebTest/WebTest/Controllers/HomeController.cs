@@ -21,11 +21,17 @@ namespace WebTest.Controllers
             // возвращаем представление
             return View();
         }
+
         [HttpGet]
         public ActionResult Buy(int id)
         {
-            ViewBag.BookId = id;
+            if (id > db.Books.Count())
+               return Redirect("/Home/Index");
+            else
+            {
+            ViewBag.BookId = id;           
             return View();
+            }
         }
         [HttpPost]
         public string Buy(PurchaseModels purchase)
