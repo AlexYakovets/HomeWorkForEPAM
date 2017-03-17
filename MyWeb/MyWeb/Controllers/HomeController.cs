@@ -10,21 +10,55 @@ using MyWeb.Models.ModelViews;
 namespace MyWeb.Controllers
 {
     public class HomeController : Controller
-    {
-        AlbumDbContext DB = new AlbumDbContext();
+    {   AlbumDbContext DB = new AlbumDbContext();
         public ActionResult Index()
         {
             List<AlbumView> viewEntityCollection = new List<AlbumView>();
-            foreach (var a in DB.Albums)
+            //foreach (var s in DB.Singers)
+            //{
+            //    AlbumView viewEntity = new AlbumView();
+            //    viewEntity.NameOfSinger = s.Name;
+            //    viewEntity.DateOfBirth = s.DateOfBirth;
+            //    var albums = from a in DB.Albums
+            //                 where a.SingerId == s.Id
+            //                 select a;
+            //    //select new { Id = a.Id, Name = a.Name, DateOfRelease = a.DateOfRelease, };  
+            //    foreach (var a in albums)
+            //    {
+            //        viewEntity.Id = a.Id;
+            //        viewEntity.DateOfRelease = a.DateOfRelease;
+            //        viewEntity.CountOfSongs = a.CountOfSongs;
+            //        viewEntity.Name = a.Name;
+            //        viewEntityCollection.Add(viewEntity);
+
+            //    }
+            //}
+            var Singers = DB.Singers.ToList();
+            foreach (var s in Singers)
             {
-                AlbumView viewEntity = new AlbumView();
-                viewEntity.Name = a.Name;
-                viewEntity.CountOfSongs = a.CountOfSongs;
-                viewEntity.DateOfRelease = a.DateOfRelease;
-                viewEntity.NameOfSinger = a.Singer.Name;
-                viewEntity.DateOfBirth = a.Singer.DateOfBirth;
-                viewEntityCollection.Add(viewEntity);
+                
+                var Albums = DB.Albums.ToList();
+                var albums = from a in Albums
+                             where a.SingerId == s.Id
+                             select a;
+                foreach (var a in albums)
+                {
+                    AlbumView viewEntity = new AlbumView();
+                    viewEntity.NameOfSinger = s.Name;
+                    viewEntity.DateOfBirth = s.DateOfBirth;
+                    viewEntity.Id = a.Id;
+                    viewEntity.DateOfRelease = a.DateOfRelease;
+                    viewEntity.CountOfSongs = a.CountOfSongs;
+                    viewEntity.Name = a.Name;
+                    viewEntityCollection.Add(viewEntity);
+
+                }         
             }
+
+
+
+
+            ViewBag.Title = DB.Singers.Count();
             ViewBag.Albums = viewEntityCollection;
 
             return View();

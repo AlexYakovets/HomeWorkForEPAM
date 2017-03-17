@@ -12,13 +12,13 @@ namespace MyWeb.Models
         public string Name { get; set; }
         public DateTime DateOfRelease { get; set; }
         public int CountOfSongs { get; set; }
-        public Singer Singer { get; set; }
+        public int SingerId { get; set; }
 
 
-        public Album()
-        {
-            Singer=new Singer();
-        }
+        //public Album()
+        //{
+        //    Singer = new Singer();
+        //}
 
 
     }

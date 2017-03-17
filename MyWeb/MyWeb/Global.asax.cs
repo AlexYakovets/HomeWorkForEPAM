@@ -14,7 +14,7 @@ namespace MyWeb
     {
         protected void Application_Start()
         {
-            Database.SetInitializer(new AlbumDbInitializer());
+           // Database.SetInitializer(new AlbumDbInitializer());
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
